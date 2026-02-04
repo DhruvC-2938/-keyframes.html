@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .loading{
+                font-size:30px;
+                font-family:Arial, sans-serif;
+                font-weight:bold;
+                color:white;
+                line-height:50px;
+                margin-bottom: 60px;
+                animation:blink 1s infinite;
+            }
+            @keyframes blink{
+                from{
+                    color:red;
+                }
+                to{
+                    color:blue;
+                }
+            }
+            .spinner{
+                width:80px;
+                height:80px;
+                border:8px solid lightgray;
+                border-top:8px solid blue;
+                border-radius:50%;
+                animation:spin 1s linear infinite;
+                margin-bottom: 60px;
+            }
+            @keyframes spin{
+                from{
+                    transform:rotate(0deg);
+                }   
+                to{
+                    transform:rotate(360deg);
+                }}
+                .dot {
+                width: 30px;
+                height: 30px;
+                background: black;
+                border-radius: 50%;
+                display: inline-block; 
+                animation: bounce 0.5s infinite alternate;
+                margin-bottom: 60px;
+                }
+                @keyframes bounce {
+                from { transform: translateY(0px); }
+                to { transform: translateY(30px); }
+             }
+             .logo {
+                width: 100px;
+                height: 50px;
+                background: rgb(255, 153, 0);
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                text-align: center;
+                line-height: 50px;
+                margin-bottom: 60px;
+                animation: float 0.5s infinite alternate;
+            }
+            @keyframes float {
+                from { transform: translateY(0px); }
+                to { transform: translateY(30px); }
+            }
+            .bar{
+                width: 300px;
+                height: 30px;
+                background-color: rgb(176, 185, 193);
+                margin-bottom: 60px;
+            }
+            .fill{
+                width: 0%;
+                height: 100%;
+                background-color: green;
+                animation: progress 3s linear infinite;
+            }
+
+        @keyframes progress{
+            from{ width:0%; }
+            to{ width:100%; }
+        }
+
+        </style>
+    </head>
+    <body>
+        <h2>Task 1: Blinking Text Loader</h2>
+        <h2 class="loading">Loading...</h2>
+        <h2>Task 2: Rotating Circular Loader</h2>
+        <div class="spinner"></div>
+        <h2>Task 3: Bouncing Dots</h2>
+         <div class="dot"></div>
+         <div class="dot"></div>
+         <div class="dot"></div>
+        <h2>Task 4: Logo Animation</h2>
+        <div class="logo">LOGO</div>
+        <h2>Task 5: Progress Bar</h2>
+        <div class="bar">
+            <div class="fill"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: black;
+            overflow: hidden;
+            position: relative;
+        }
+
+        
+        .star {
+            width: 5px;
+            height: 5px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 100%;
+            animation: float 10s infinite linear;
+        }
+
+        /* Positioning and delays */
+        .star1 { left: 10%; animation-delay: 0.5s; }
+        .star2 { left: 40%; animation-delay: 1s; }
+        .star3 { left: 60%; animation-delay: 1.5s; }
+        .star4 { left: 80%; animation-delay: 2s; }
+        .star5 { left: 70%; animation-delay: 2.5s; }
+        .star6 { left: 10%; animation-delay: 3s; }
+        .star7 { left: 30%; animation-delay: 3.5s; }
+        .star8 { left: 50%; animation-delay: 4s; }
+        .star9 { left: 55%; animation-delay: 4.5s; }
+        .star10 { left: 75%; animation-delay: 5s; }
+        .star11 { left: 25%; animation-delay: 5.5s; }
+        .star12 { left: 45%; animation-delay: 6s; }
+        .star13 { left: 85%; animation-delay: 6.5s; }
+        .star14 { left: 15%; animation-delay: 7s; }
+        .star15 { left: 35%; animation-delay: 7.5s; }
+
+        @keyframes float {
+            0% { 
+                top: 100%; 
+                opacity: 0; 
+            }
+            10% { 
+                opacity: 1; 
+            }
+            90% { 
+                opacity: 1; 
+            }
+            100% { 
+                top: -10%; 
+                opacity: 0; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="star star1"></div>
+    <div class="star star2"></div>
+    <div class="star star3"></div>
+    <div class="star star4"></div>
+    <div class="star star5"></div>
+    <div class="star star6"></div>
+    <div class="star star7"></div>
+    <div class="star star8"></div>
+    <div class="star star9"></div>
+    <div class="star star10"></div>
+    <div class="star star11"></div>
+    <div class="star star12"></div>
+    <div class="star star13"></div>
+    <div class="star star14"></div>
+    <div class="star star15"></div>
+</body>
+</html>
